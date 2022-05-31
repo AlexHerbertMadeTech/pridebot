@@ -1,7 +1,8 @@
-// See https://aka.ms/new-console-template for more information
 using System;
 
-namespace PrideBot // Note: actual namespace depends on the project name.
+//This exists to enable us to build and run this locally, without interfacing with AWS.
+//We'll probably get it to call the same functions as the AWS/LambdaSharp code somehow, for local testing
+namespace PrideBot
 {
     internal class Program
     {
