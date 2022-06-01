@@ -1,5 +1,6 @@
 // namespace SlackApp {
 //   public static class Configuration {
 //   public readonly static string WebhookUrl = "your_url_here";
+//   public readonly static string BotApiKey = "your_xoxb key here";
 //   }
 // }
