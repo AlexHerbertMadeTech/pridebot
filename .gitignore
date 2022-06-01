@@ -62,3 +62,6 @@ tmp/
 
 .fake
 .ionide
+
+#Project specific
+Configuration.cs
