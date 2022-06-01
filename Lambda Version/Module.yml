@@ -1,20 +1,32 @@
 # The Module Name is used as prefix for all contained resources.
-Module: My.MySampleModule
+Module: MadeTech.SlackPrideBot
 
 # The Module Version is shown in the CloudFormation stack and Lambda function descriptions.
 Version: 1.0-DEV
 
 # The Module Description is shown in the AWS CloudFormation console with the version number.
-Description: Module description
+Description: A simple SlackBot module
 
 # The Items section defines values and resources for the module.
 Items:
 
+  - Parameter: SlackToken
+    Description: Slack verification token
+    Scope: MyFunction
+    Default: ""
+    
   - Variable: MyVariable
-    Description: Variable description
+    Description: We don't know why this was created or what it does yet...
     Value: A sample variable value for the module
 
   - Function: MyFunction
     Description: TO-DO - update function description
     Memory: 1769
     Timeout: 30
+
+  - Function: HelloSlack
+    Description: When a message is received via Slack (somehow?) return or say 'Hello world'
+    Memory: 1769
+    Timeout: 30
+    Sources:
+      - SlackCommand: /hello-world
