@@ -10,7 +10,7 @@ using MargieBot;
 Console.WriteLine("Hello, World!");
 var slackbot = new Bot();
 slackbot.RespondsTo("Hi").With("A nice response");
-slackbot.Connect("xoxb-3533570877828-3584756602661-IEK2dchjNfdAiHnhEfz9zlVS");
+slackbot.Connect(Configuration.BotApiKey);
   
      SlackClient client = new SlackClient(Configuration.WebhookUrl);  
   
